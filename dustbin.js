@@ -15,23 +15,23 @@ class Dustbin{
           var pos1 =this.body1.position;
           var pos2 =this.body2.position;
           var pos3 =this.body3.position;
-          push();
+          /*push();
           translate(pos1.x, pos1.y);
           fill("grey");
           rect(0, 0, 20, 100);
-          pop();
+          pop();*/
           
           push();
           translate(pos2.x, pos2.y);
           fill("grey");
-          rect(0, 0, 180, 20);
+          image(this.image,0, 0, 180, 200);
           pop();
           
-          push();
+          /*push();
           translate(pos3.x, pos3.y);
           fill("grey");
           rect(0, 0, 20, 100);
-          pop();
+          pop();*/
         }
       };
       

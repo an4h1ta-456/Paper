@@ -5,9 +5,9 @@ class Paper{
             friction: 1,
             restitution: 0.1,
             density: 15
-            this.image = loadImage("paper.png");
         }
-
+    
+    this.image = loadImage("paper.png");
     this.body = Bodies.circle(x, y, r/2, options);
     this.x = x;
     this.y = y;
@@ -23,7 +23,7 @@ class Paper{
         push();
         translate(pos.x, pos.y);
         rotate(angle);
-        circle(0,0,this.r);
+        image(this.image,0,0,this.r,this.r);
         pop();
         
 
